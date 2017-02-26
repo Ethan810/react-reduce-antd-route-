@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Fetch IE8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href ="index.css" />
+  <style>
+
+  </style>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.15.10/dev/shims/matchMedia.js"></script>-->
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    String.prototype.trim = function () {
+      return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+    String.prototype.ltrim = function () {
+      return this.replace(/(^\s*)/g, "");
+    }
+    String.prototype.rtrim = function () {
+      return this.replace(/(\s*$)/g, "");
+    }
+  </script>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
